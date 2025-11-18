@@ -7,10 +7,10 @@ Fraises
 //et encore un autre commentaire
 AROUSSI BENTATA
 Adam
-1
-3
-2
-4
+10000 //valeur vote choco
+3 //valeur vote banane
+2 //valeur vote mangue
+4 //valeur vote Fraise
 ACEMYAN DE OLIVEIRA
 Ewan
 1
