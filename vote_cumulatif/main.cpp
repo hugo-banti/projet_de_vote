@@ -69,7 +69,7 @@ int main()
 
     //fonction Inspiré par M casali
     vector<participant> vParticipant;
-    for (unsigned i (0); i < 10; ++i){
+    for (unsigned i (0); i < 115; ++i){
         string nom (litUneString());
         string prenom  (litUneString());
         vector<int> NoteGlace = litNote();
