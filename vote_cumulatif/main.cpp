@@ -41,7 +41,7 @@ vector<int> litNote (){
 string vote_cumulatif(vector<glace> vGlacePref, vector<participant> vParticipant)
 {
     string result;
-    for (size_t i = 0; i < size(vParticipant) - 1; ++i) {
+    for (size_t i = 0; i < size(vParticipant); ++i) {
         for (size_t j = 0; j < size(vParticipant[i].NoteGlace); ++j) {
             vGlacePref[j].note += vParticipant[i].NoteGlace[j];
         }
@@ -69,7 +69,7 @@ int main()
 
     //fonction Inspiré par M casali
     vector<participant> vParticipant;
-    for (unsigned i (0); i < 115; ++i){
+    for (unsigned i (0); i < 116; ++i){
         string nom (litUneString());
         string prenom  (litUneString());
         vector<int> NoteGlace = litNote();
