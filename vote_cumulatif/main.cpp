@@ -47,13 +47,17 @@ string vote_cumulatif(vector<glace> vGlacePref, vector<participant> vParticipant
         }
     }
     int indexnoteplus = 0;
+    int noteplus = 0;
     for (size_t i = 0; i < size(vGlacePref); ++i) {
-        int noteplus = vGlacePref[0].note;
         if (vGlacePref[i].note > noteplus) {
             noteplus = vGlacePref[i].note;
             indexnoteplus = i;
         }
     }
+    // // DÉBOGAGE : afficher les totaux
+    // for (size_t i = 0; i < size(vGlacePref); ++i) {
+    //     cout << vGlacePref[i].nom << " : " << vGlacePref[i].note << " voix" << endl;
+    // }
     result = vGlacePref[indexnoteplus].nom;
     return result;
 }
@@ -69,7 +73,7 @@ int main()
 
     //fonction Inspiré par M casali
     vector<participant> vParticipant;
-    for (unsigned i (0); i < 116; ++i){
+    for (unsigned i (0); i < 105; ++i){
         string nom (litUneString());
         string prenom  (litUneString());
         vector<int> NoteGlace = litNote();
