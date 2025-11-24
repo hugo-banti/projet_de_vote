@@ -34,6 +34,18 @@ int litUnEntier () {
     return stoi(uneChaine);
 }
 
+void recup_info(vector<glace> &vGlacePref, vector<participant> &vParticipant)
+{
+    vector<participant> tmp;
+    for (unsigned i (0); i < 105; ++i)
+    {
+        string nom (litUneString());
+        string prenom (litUneString());
+        int NoteGlace (litUnEntier());
+        tmp.push_back(participant{nom, prenom, NoteGlace});
+    }
+    vParticipant = tmp;
+}
 void vote_proportionel(vector<glace> &vGlacePref, vector<participant> &vParticipant)
 {
     for (size_t i = 0; i < size(vGlacePref); ++i) {
